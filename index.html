@@ -1,0 +1,149 @@
+<!--USAR LIGHTHOUSE REPORT VIEWER: Para evaluar la puntuacion del sitio web, esto se debe hacer en Google-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina web sobre recetas de cafe"> <!--####ES MUY IMPORTANTE COLOCAR ESTA ETIQUETA YA QUE SUMA BASTANTES PUNTOS AL MOMENTO DE HACER LA AUDITORIA EN LIGHTHOUSE####-->
+    <title>BlogDeCafe</title>
+
+    <!--PREFETCH-->
+    <link rel="prefetch" href="nosotros.html" as="document"> <!--El prefetch es una herramienta que sirve para cargar la siguiente pagina a la que creemos que el usuario visitara de esta manera cuando el usuario de click para ir al sitio cargara rapidamente mejorando la experiencia para el usuario-->
+   
+    <!--PRELOAD-->
+    <link rel="preload" href="css/normalize.css" as="style"> <!--El PRELOAD sirve para precargar lo que necesito con mas urgencia en la pagina, de esta manera la pagina cargara mas rapido, para esto primero en una linea se coloca el PRELOAD y en la siguiente linea lo que se va a precargar-->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Staatliches&display=swap" crossorigin="crossorigin" as="font" >
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/styles.css" as="style"> <!--primero va esta linea:Linea 1-->
+    <link rel="stylesheet" href="css/styles.css"> <!--Despues va esta linea:Linea 2-->
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafe</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+
+        </div>
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de Cafe con consejos y cursos</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores receras y consejos</p>
+        </div>
+    </header>
+    
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+            <h3>Nuestro Blog</h3>
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture> <!--Picture es una etiqueta que permite colocar dentro de ella distintos formatos de imagenes-->
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp"> <!--Source es la etiqueta que se usa para llamar la imagen,WEBP es un formato que permite que la imagen sea mas liviana y de alta calidad, no tiene aun buen soporte en todos los navegadores, por lo cual se sugiere colocar una imagen alternativa con formato jpg como se realiza a continuacion en la siguiente linea-->
+                        <img loading="lazy"src="img/blog1.jpg" alt="imagen blog"> <!--Loading Lazy es un atributo que carga la imagen una vez se requiera, es decir si la imagen esta al final de la pagina y el usuario esta en el inicio, no se cargara la imagen-->
+                    </picture>
+                    
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Tipos de Grano de Cafe</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis commodi nostrum rem fuga atque perspiciatis esse ab ipsum, quo ratione adipisci voluptas, quasi quaerat consequuntur recusandae nemo ex beatae quos.</p>
+                    <a href="entrada.html" class="boton boton--primario"  >Leer Entrada</a>
+                </div>
+
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture> <!--Picture es una etiqueta que permite colocar dentro de ella distintos formatos de imagenes-->
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp"> <!--Source es la etiqueta que se usa para llamar la imagen,WEBP es un formato que permite que la imagen sea mas liviana y de alta calidad, no tiene aun buen soporte en todos los navegadores, por lo cual se sugiere colocar una imagen alternativa con formato jpg como se realiza a continuacion en la siguiente linea-->
+                        <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
+                    </picture>
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">3 Deliciosas Recetas de Cafe</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis commodi nostrum rem fuga atque perspiciatis esse ab ipsum, quo ratione adipisci voluptas, quasi quaerat consequuntur recusandae nemo ex beatae quos.</p>
+                    <a href="entrada.html" class="boton boton--primario"  >Leer Entrada</a>
+                </div>
+
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture> <!--Picture es una etiqueta que permite colocar dentro de ella distintos formatos de imagenes-->
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp"> <!--Source es la etiqueta que se usa para llamar la imagen,WEBP es un formato que permite que la imagen sea mas liviana y de alta calidad, no tiene aun buen soporte en todos los navegadores, por lo cual se sugiere colocar una imagen alternativa con formato jpg como se realiza a continuacion en la siguiente linea-->
+                        <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
+                    </picture>
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Beneficios del Cafe</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis commodi nostrum rem fuga atque perspiciatis esse ab ipsum, quo ratione adipisci voluptas, quasi quaerat consequuntur recusandae nemo ex beatae quos.</p>
+                    <a href="entrada.html" class="boton boton--primario"  >Leer Entrada</a>
+                </div>
+
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <h3>Nuestros Cursos y Talleres</h3>
+
+            <ul class="cursos no-padding"> <!--Significa lista no ordenada, agrega una viñeta al elemento, tambien esta "ol" significa lista ordenada, agrega un numero para enumerar el elemento-->
+                <li class="widget-curso"> <!--Con "li" se crean los elementos de la lista-->
+                    <h4 class="no-margin">Tecnicas de Extraccion de Cafe</h4>
+                    <p class="widget-curso__label">Precio:
+                        <span class="widget-curso__info">Gratis</span>
+                    </p>
+                    <p class="widget-curso__label">Cupo:
+                        <span class="widget-curso__info">20</span>
+                    </p>
+                    <a href="entrada.html" class="boton boton--secundario"  >Mas Informacion sobre nuestros cursos</a> <!--Para subir el SEO en el auditor lighthouse de Google, se recomienda describir un poco el enlace-->
+
+                </li>
+
+                <li class="widget-curso"> <!--Con "li" se crean los elementos de la lista-->
+                    <h4 class="no-margin">4 Recetas de Cafe Para Principiantes</h4>
+                    <p class="widget-curso__label">Precio:
+                        <span class="widget-curso__info">Gratis</span>
+                    </p>
+                    <p class="widget-curso__label">Cupo:
+                        <span class="widget-curso__info">20</span>
+                    </p>
+                    <a href="entrada.html" class="boton boton--secundario"  >Mas Informacion sobre nuestros cursos</a>
+
+                </li>
+
+            </ul>
+        </aside>
+    </div>
+    
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafe</span></h1>
+                </a>
+    
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+    </footer>
+
+</body>
+
+</html>
