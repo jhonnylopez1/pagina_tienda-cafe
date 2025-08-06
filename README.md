@@ -1,5 +1,7 @@
 # Página de Tienda de Café ☕
 
+![Vista previa del sitio web](blogcafe.png)
+
 Este es un proyecto creado como práctica durante un curso de desarrollo web. La página es completamente responsiva y fue desarrollada con:
 
 - HTML5
